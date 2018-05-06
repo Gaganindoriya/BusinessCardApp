@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightPink">
+
+    <ImageView
+        android:id="@+id/yt"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:padding="8dp"
+        android:src="@drawable/youtube"
+        />
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/yt"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="youtube/geekygagan"
+        android:textColor="@color/btn_color"
+        android:textSize="32dp" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading"
+        android:scaleType="centerCrop"
+        android:src="@drawable/geeky" />
+
+    <LinearLayout
+        android:id="@+id/first_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/img"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@color/btn_color"
+            android:padding="8dp"
+            android:text="Java"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="32dp" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@color/btn_color"
+            android:padding="8dp"
+            android:text="Android"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="32dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_row"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/first_row">
+        <TextView
+            android:id="@+id/javatxt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Kotlin"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:background="@color/btn_color"
+            android:textSize="32dp" />
+
+        <TextView
+            android:id="@+id/androidtxt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Unity"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:background="@color/btn_color"
+            android:textColor="#ffffff"
+            android:textSize="32dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Learn with fun"
+        android:layout_above="@id/subscribe"
+        android:textAlignment="center"
+        android:layout_margin="8dp"
+        android:textSize="32sp"
+        android:fontFamily="cursive"
+        android:textColor="@color/btn_color"
+
+        />
+    <TextView
+        android:id="@+id/subscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:textSize="32sp"
+        android:background="@color/btn_color"
+
+        android:text="Subscribe"/>
+
+
+</RelativeLayout>
